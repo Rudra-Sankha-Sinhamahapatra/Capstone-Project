@@ -3,12 +3,17 @@
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-start;
     height: 50px;
     width: 100%;
     overflow: hidden;
     margin: 0px;
     padding: 0px;
+
+}
+nav{position: fixed;
+width: 100%;
 }
 
 body{
@@ -20,10 +25,10 @@ button{
     margin-left: 30px;
     margin-bottom: 20px;
     color: black;
-    background: url(./Nav\ bar\ background.png);
+    background: #207b68;
 }
 nav div{
-    background: url(./Nav\ bar\ background.png);
+    background: #207b68;
     background-size: cover;
   
     margin: 0px;
@@ -45,7 +50,7 @@ nav{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0px 0px;
-    height: 500px;
+    height: 100vh;
     margin-top: 0px;
 }
 
@@ -62,12 +67,248 @@ nav{
     font-size: 5rem;
 }
 .description{
-    text-align: start;
-    margin-left: 440px;
     color: white;
     size: 2rem;
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
 }
 li a{
-    display: block;
+    display: flex;
 }
+
+#About-me div{
+    background-color: #FFF8CB;
+    background-position: 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 1.5fr 2fr;
+    grid-template-columns: 1.5fr 1fr;
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.profiledp{
+    display: grid;
+    grid-row-start: span 2;
+    height: 300px;
+    width: 210px;
+   padding-top: 90px;
+}
+
+.whoiam{
+    text-align: center;
+    display: flex;
+    font-size: 5rem ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.whop{
+   width: 500px ;
+   padding-left: 170px;
+   font-family: 'Montserrat', sans-serif;
+}
+
+#education>.container{
+ display: grid;
+ grid-template-rows: 1fr 1fr;
+ grid-template-columns: 1fr 1fr;
+ background: #207b68 ;
+ height: 100vh;
+}
+.edul{
+    list-style: none ;
+    
+}
+
+.edu{
+
+    padding-left: 40px;
+    padding-top: 100px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+
+}
+ .edul li{
+    
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+ }
+
+ .skillstitle{
+    padding-top: 100px;
+    padding-left: 25px;
+    
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+ }
+
+ .skilllist li{
+
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+ }
+
+ .work-img{
+    height: 180px;
+    width: 300px;
+    border: 6px dotted white;
+    display: flex;
+  
+ }
+ .show {
+    background: linear-gradient(300deg,#22dbb3 , #00bfff, #ff4c68);
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite;
+    background-repeat: no-repeat;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .projecttitle{
+    margin-top: 0px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+  }
+
+  .work-title{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    padding-left: 50px;
+    padding-right: 0px;
+    margin: 0px;
+    padding-top: 10px;
+  }
+
+  .work-para{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 80px;
+    width: 220px;
+    padding-right: 0px;
+    margin: 0px;
+    padding-bottom: 20px;
+  }
+  .work{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  .work-item{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Contact-Me .container{
+    background: #207b68;
+    margin-bottom: 0px;
+    background-repeat: no-repeat;
+  }
+  .Get-in{
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    padding-left: 20px;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+    padding-top: 80px;
+  }
+  .socials{
+    margin-bottom: 0px;
+  }
+  footer{
+    display: flex;
+    justify-content: center;
+    background-color: #FFF8CB;
+    color: black;
+    margin-top: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+
+  @media(max-width:1200px){
+    .navbar-list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+        min-height: 300px;
+        position:  fixed;
+        background: none;
+    }
+    nav div{
+     background: none;
+    }
+    button{
+        background: none;
+    }
+    button a{
+        color: black;
+    }
+    .item{
+        color: black;
+    }
+    #About-me div{
+        display: flex;
+        padding-left: 0px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        flex-direction: column;
+    }
+    .profiledp{
+        padding-top: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        height: 180px;
+        width: 150px;
+    }
+    .whoiam{
+        margin: 0px;
+        padding-bottom: 10px;
+        padding-left: 0px;
+        font-size: 2rem;
+       display: flex;
+       justify-content: start;
+    }
+    .whop{
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        width: 220px;
+    }
+    .work{
+        display: flex;
+        flex-direction: column;
+    }
+  }
