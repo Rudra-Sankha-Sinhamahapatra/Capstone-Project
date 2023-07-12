@@ -305,10 +305,18 @@ li a{
         display: flex;
         margin: 0px;
         padding: 0px;
+        padding-left: 30px;
         width: 220px;
     }
     .work{
         display: flex;
         flex-direction: column;
     }
+    #home div{
+      height: 500px;
+    }
+    #About-me div{
+      height: 500px;
+    }
+
   }
