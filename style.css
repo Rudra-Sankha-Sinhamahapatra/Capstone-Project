@@ -119,7 +119,7 @@ li a{
 
 #education>.container{
  display: grid;
- grid-template-rows: 1fr 1fr;
+ grid-template-rows: 1fr;
  grid-template-columns: 1fr 1fr;
  background: #207b68 ;
 }
