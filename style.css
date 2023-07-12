@@ -314,6 +314,7 @@ li a{
     }
     #home div{
       height: none;
+      display: flex;
     }
     #About-me div{
       height: none;
