@@ -50,7 +50,6 @@ nav{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0px 0px;
-    height: 100vh;
     margin-top: 0px;
 }
 
@@ -74,6 +73,7 @@ nav{
     text-align: left;
     justify-content: center;
     align-items: center;
+    padding-bottom: 30px;
 }
 li a{
     display: flex;
@@ -87,7 +87,6 @@ li a{
     display: grid;
     grid-template-rows: 1.5fr 2fr;
     grid-template-columns: 1.5fr 1fr;
-    height: 100vh;
     width: 100%;
     margin: 0px;
     padding: 0px;
@@ -110,6 +109,7 @@ li a{
     align-items: center;
     margin-top: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    padding-top: 0px;
 }
 
 .whop{
