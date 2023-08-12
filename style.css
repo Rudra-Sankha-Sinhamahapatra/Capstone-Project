@@ -78,7 +78,9 @@ nav{
 li a{
     display: flex;
 }
-
+.fromten{
+  padding-left: 4px;
+}
 #About-me div{
     background-color: #FFF8CB;
     background-position: 0px 0px;
